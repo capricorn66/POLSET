@@ -1,0 +1,132 @@
+/* typography
+*******************************************************************/
+
+h1 {
+
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.1em;
+    @media (max-width: 768px) {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 575px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    @media (max-height: 900px) and (min-width: 1200px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    @media (max-height: 800px) and (min-width: 1200px) {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    @media (max-height: 700px) and (min-width: 1200px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 1.1em;
+    @media (max-width: 768px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 575px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    @media (max-height: 900px) and (min-width: 1200px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    @media (max-height: 800px) and (min-width: 1200px) {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    @media (max-height: 700px) and (min-width: 1200px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.1em;
+
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.1em;
+    color: $app-color-1;
+}
+
+.small, small {
+    font-size: 75%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: .075em;
+}
+
+@media (max-width: 1479px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}
+
+.modal-body,
+main {
+
+    .lead {
+        line-height: 1.5em;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    p {
+        line-height: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    ul, ol {
+        margin-bottom: 30px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        line-height: 1.5em;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+}

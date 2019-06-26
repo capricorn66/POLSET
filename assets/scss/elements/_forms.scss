@@ -1,0 +1,35 @@
+/* forms
+*******************************************************************/
+
+.form-control {
+    border-color: $gray-800;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    border-color: $app-color-1;
+    box-shadow: none;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $app-color-1;
+    background-color: $app-color-1;
+}
+
+.custom-control {
+    .custom-control-label::before {
+        border-color: $gray-900;
+    }
+    a {
+        color: $gray-900;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+.input-group-text {
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+
+}

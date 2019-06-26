@@ -1,0 +1,72 @@
+@mixin font-size($sizeValue: 1.6, $important: '') {
+    font-size: ($sizeValue * 10) + px #{$important};
+    font-size: $sizeValue + rem #{$important};
+}
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition !important;
+    transition: $transition !important;
+}
+
+@mixin transform($transition...) {
+    -webkit-transform: $transition !important;
+    transform: $transition !important;
+}
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $color;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: $color;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: $color;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $color;
+    }
+}
+
+@mixin d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+@mixin flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
+@mixin flex-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+@mixin flex-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+
+@mixin align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+@mixin align-items-end {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+}
+
+@mixin justify-content-between {
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}

@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POLSET</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-md">
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/polset-logo-white.svg" alt="sklep polset">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="" class="basket"><i class="icon-basket"></i><sub class="badge">2</sub></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUKTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CENNIK</a>
+                        </li>
+                    </ul>
+                    <ul class="userbar-nav">
+                        <li class="nav-item">
+                            <i class="icon-user"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Moje Zamówienia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Moje Dane</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-white" href="#">WYLOGUJ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="mainContent">
+
+        <div class="container">
+
+            <div class="backward">
+                <a href=""><i class="icon-transfer-left"></i> wróć do listy produktów</a>
+            </div>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Koszyk - Produkty do wyceny</li>
+                </ol>
+            </nav>
+
+            <div class="basket">
+                <div class="basket-product-list">
+
+                    <div class="basket-product-list-head">
+                        <div class="col-product">
+                            <h3>Produkty</h3>
+                        </div>
+                        <div class="col-unit-price">
+                            Cena za szt.
+                        </div>
+                        <div class="col-amount">
+                            Ilość
+                        </div>
+                        <div class="col-price">
+                            Wartość
+                        </div>
+                        <div class="col-remove">
+                            Usuń
+                        </div>
+                    </div>
+                    <div class="basket-product-list-row">
+                        <div class="col-product">
+                            <div class="col-product-img" data-new="NOWOŚĆ">
+                                <img src="images/armchairs/armchair-1.png" height="296" width="296"/>
+                            </div>
+                            <div class="col-product-desc">
+                                <h2>Alvesta Pillow Armchair Black Metal</h2>
+                                <p>
+                                    Cena na biało dla opcji <strong>Tkanina</strong><br>
+                                    <strong>200,00</strong> EUR
+                                </p>
+                                <p>
+                                    Wartość materiału dla modelu<br>
+                                    <strong>50,00</strong> EUR
+                                    <small class="d-block">Cowboy 802 camel (25,00 EUR/mb x 2 mb = 50,00 EUR)</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-unit-price">
+                            <small class="title">Cena za szt.</small>
+                            <strong>250,00</strong> EUR
+                        </div>
+                        <div class="col-amount">
+                            <small class="title">Ilość</small>
+                            <input type="text" class="form-control form-control-lg" value="20">
+                        </div>
+                        <div class="col-price">
+                            <small class="title">Wartość</small>
+                            <strong>5 000,00</strong> EUR
+                        </div>
+                        <div class="col-remove">
+                            <small class="title">Usuń</small>
+                            <button class="btn-remove"><i class="icon-delete"></i></button>
+                        </div>
+                    </div>
+                    <div class="basket-product-list-row">
+                        <div class="col-product">
+                            <div class="col-product-img" data-new="NOWOŚĆ">
+                                <img src="images/chairs/chair-1.png" height="296" width="296"/>
+                            </div>
+                            <div class="col-product-desc">
+                                <h2>Jessica Chair</h2>
+                                <p>
+                                    Cena na biało dla opcji <strong>Tkanina</strong><br>
+                                    <strong>200,00</strong> EUR
+                                </p>
+                                <p>
+                                    Wartość materiału dla modelu<br>
+                                    <strong>50,00</strong> EUR
+                                    <small class="d-block">Cowboy 802 camel (25,00 EUR/mb x 2 mb = 50,00 EUR)</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-unit-price">
+                            <small class="title">Cena za szt.</small>
+                            <strong>250,00</strong> EUR
+                        </div>
+                        <div class="col-amount">
+                            <small class="title">Ilość</small>
+                            <input type="text" class="form-control form-control-lg" value="20">
+                        </div>
+                        <div class="col-price">
+                            <small class="title">Wartość</small>
+                            <strong>5 000,00</strong> EUR
+                        </div>
+                        <div class="col-remove">
+                            <small class="title">Usuń</small>
+                            <button class="btn-remove"><i class="icon-delete"></i></button>
+                        </div>
+                    </div>
+                    <div class="basket-product-list-row">
+                        <div class="col-product">
+                            <div class="col-product-img">
+                                <img src="images/chairs/chair-2.png" height="296" width="296"/>
+                            </div>
+                            <div class="col-product-desc">
+                                <h2>Jessica Chair</h2>
+                                <p>
+                                    Cena na biało dla opcji <strong>Tkanina</strong><br>
+                                    <strong>200,00</strong> EUR
+                                </p>
+                                <p>
+                                    Wartość materiału dla modelu<br>
+                                    <strong>50,00</strong> EUR
+                                    <small class="d-block">Cowboy 802 camel (25,00 EUR/mb x 2 mb = 50,00 EUR)</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-unit-price">
+                            <small class="title">Cena za szt.</small>
+                            <strong>250,00</strong> EUR
+                        </div>
+                        <div class="col-amount">
+                            <small class="title">Ilość</small>
+                            <input type="text" class="form-control form-control-lg" value="20">
+                        </div>
+                        <div class="col-price">
+                            <small class="title">Wartość</small>
+                            <strong>5 000,00</strong> EUR
+                        </div>
+                        <div class="col-remove">
+                            <small class="title">Usuń</small>
+                            <button class="btn-remove"><i class="icon-delete"></i></button>
+                        </div>
+                    </div>
+                    <div class="basket-product-list-summary">
+
+                        Wartość zamówienia
+
+                        <div class="basket-price">
+                            9 610,00 <small>EUR</small>
+                        </div>
+
+                    </div>
+                    <div class="text-right mb-80">
+
+                        *Cena nie zawiera kosztów dostawy (<strong>EXW Krosno Odrzańskie</strong>)
+
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-8 col-lg-6">
+
+                            <div class="custom-control custom-checkbox mb-20">
+                                <input type="checkbox" class="custom-control-input" id="check1">
+                                <label class="custom-control-label" for="check1">Oświadczam, że zapoznałem się z <a href="">Regulaminem</a></label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-60">
+                                <input type="checkbox" class="custom-control-input" id="check2">
+                                <label class="custom-control-label" for="check2">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z <a href="">Polityką prywatności</a></label>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-xl">ZAMAWIAM</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <a class="brand" href="#">
+                        <img src="images/polset-logo-white.svg" alt="sklep polset">
+                    </a>
+                    <p>
+                        ul. Bohaterów Westerplatte 4/5<br>
+                        65-034 Zielona Góra<br>
+                        Polska
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h6>KONTAKT</h6>
+                    <p>
+                        <a href="">info@polset.pl</a><br>
+                        tel. <strong>+48 68 383 64 61</strong><br>
+                        fax <strong>+48 68 383 07 54</strong>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h6>MENU</h6>
+                    <ul>
+                        <li>
+                            <a href="">Pomoc</a>
+                        </li>
+                        <li>
+                            <a href="">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="">Polityka prywatności</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-right d-none d-lg-block">
+                    <div class="img-light">
+                        <img src="images/armchair-polset.png" height="380" width="367"/>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+    <div class="bs4-xxl d-none d-xxl-block"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
+
+
+    <script>
+
+        $(function() {
+
+            $('#miXItUp').mixItUp({
+                layout: {
+                    display: 'flex',
+                }
+            });
+
+            var inputText;
+            var $matching = $();
+
+            var delay = (function(){
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $("#miXItUp-search").keyup(function(){
+                delay(function(){
+                    inputText = $("#miXItUp-search").val().toLowerCase();
+
+                    if ((inputText.length) > 0) {
+                        $( '.mix').each(function() {
+                            $this = $("this");
+                            if($('.product-card-name', this).text().toLowerCase().match(inputText)) {
+                                $matching = $matching.add(this);
+                            }
+                            else {
+                                $matching = $matching.not(this);
+                            }
+                        });
+                        $("#miXItUp").mixItUp('filter', $matching);
+                    }
+
+                    else {
+                        $("#miXItUp").mixItUp('filter', 'all');
+                    }
+                }, 200 );
+            });
+        })
+
+
+    </script>
+
+
+</body>
+</html>

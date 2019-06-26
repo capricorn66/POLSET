@@ -1,0 +1,94 @@
+/* footer
+*******************************************************************/
+
+footer {
+    background: $black;
+    color: $gray-100;
+    font-weight: 300;
+    padding: 50px 0;
+    letter-spacing: .075em;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%;
+    .container {
+        font-size: 14px;
+        .brand {
+            margin-bottom: 32px;
+            display: block;
+            img {
+                width: 232px;
+                @media (max-width: 1199px) {
+                    width: 200px;
+                }
+                height: auto;
+            }
+        }
+        h6 {
+            margin: 40px 0 24px;
+            @media (max-width: 1199px) {
+                margin-top: 35px;
+            }
+            color: $gray-500;
+            font-weight: 500;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                margin-bottom: 3px;
+            }
+        }
+        a {
+            color: $white;
+        }
+        p {
+            line-height: 1.8em;
+        }
+        .img-light {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 50%;
+                left: 30%;
+                box-shadow: 0 0 270px 220px rgba($gray-300, .4);
+                border-radius: 50%;
+            }
+            img {
+                position: relative;
+                z-index: 1;
+                max-height: 200px;
+                max-width: 100%;
+                width: auto;
+                height: auto;
+            }
+
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1479px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

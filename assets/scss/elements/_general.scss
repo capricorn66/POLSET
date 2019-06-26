@@ -1,0 +1,78 @@
+/* general
+*******************************************************************/
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 1.4em;
+    overflow-x: hidden;
+    font-weight: 500;
+    padding-top: 140px;
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    @media (max-width: 991px) {
+        padding-top: 120px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 90px;
+    }
+}
+
+* {
+    outline: 0 !important;
+}
+
+h1, h2 h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+b,
+q strong,
+blockquote strong,
+p strong,
+ul strong,
+ol strong {
+    font-weight: 600;
+}
+
+.printer-only {
+    display: none;
+}
+
+a {
+    color: $app-color-1;
+}
+
+a:focus,
+a:hover {
+    color: $app-color-1;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid $gray-200 !important;
+}
+
+.mainContent {
+    padding: 0 0 60px 0;
+    width: 100%;
+
+    * + h4 {
+        margin-top: 64px;
+    }
+
+
+
+}
+

@@ -1,0 +1,97 @@
+/* buttons
+*******************************************************************/
+
+.btn-primary {
+    background: $app-color-1;
+    border: 1px solid $app-color-1;
+    color: white;
+    &:active,
+    &:focus,
+    &:hover {
+        background: $white !important;
+        color: $app-color-1 !important;
+        border: 1px solid $app-color-1 !important;
+        box-shadow: none;
+    }
+}
+
+.btn-outline-primary-1 {
+    background: white;
+    border: 1px solid $app-color-1;
+    color: black;
+    &:focus,
+    &:hover {
+        border-bottom: 4px solid $app-color-1;
+        text-decoration: none;
+    }
+}
+
+.btn-white {
+    border: 0;
+    background: white;
+    border-bottom: 4px solid white;
+    color: black;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    &:focus,
+    &:hover {
+        border-bottom: 4px solid $app-color-1;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.btn-outline-white {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    &:focus,
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+.btn-black {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    &:focus,
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+.btn-outline-black {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    &:focus,
+    &:hover {
+        background: black;
+        color: white;
+    }
+}
+
+.btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all linear .2s;
+    box-shadow: 0 .2em 10px -3px rgba($black,.4);
+}
+
+.btn-xl {
+    padding: 10px 80px;
+    font-size: 24px;
+    min-width: 200px;
+}
+
+.btn {
+    &.btn-link {
+        color: $app-color-1;
+        font-weight: 600;
+    }
+}
