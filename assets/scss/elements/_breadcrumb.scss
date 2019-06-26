@@ -37,8 +37,47 @@
             color: $gray-900;
         }
     }
+}
+
+.forward {
+    margin-bottom: 20px;
+    a {
+        color: $gray-900;
+        font-size: 18px;
+        text-decoration: none;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: $gray-900;
+            top: 100%;
+            margin-top: 4px;
+            left: 0;
+            -webkit-transition: width 0.2s ease-out;
+            transition: width 0.2s ease-out;
+        }
+        &:hover::after {
+            width: calc(100% - 36px);
+        }
+        i {
+            color: $app-color-1;
+            font-size: 24px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 2px;
+        }
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            color: $gray-900;
+        }
+    }
 
 }
+
 
 .breadcrumb {
     padding: 0;

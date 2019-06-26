@@ -29,6 +29,35 @@ $(document).ready(function(e) {
 
 });
 
+function setProductView(elem, items) {
+
+    var $productList = $('.productList'),
+        $elem = $(elem),
+        $btnSetView = $('.btn-setView');
+
+    $btnSetView
+        .removeClass('app-color-1');
+
+    if(items === '4') {
+        $('.product-card', $productList).removeClass('col-xxl-2');
+        $elem
+            .addClass('app-color-1')
+            .removeClass('gray-500')
+    }
+
+    if(items === '6') {
+        $('.product-card', $productList).addClass('col-xxl-2');
+        $elem
+            .addClass('app-color-1')
+            .removeClass('gray-500')
+    }
+
+
+
+
+
+}
+
 // JQ extras
 
 $.fn.hasAttr = function(name) {

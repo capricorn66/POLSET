@@ -83,6 +83,17 @@
     box-shadow: 0 .2em 10px -3px rgba($black,.4);
 }
 
+.btn-setView {
+    padding: 0 5px;
+    box-shadow: none;
+    &.app-color-1 {
+        &:focus,
+        &:hover {
+            color: $app-color-1;
+        }
+    }
+}
+
 .btn-xl {
     padding: 10px 80px;
     font-size: 24px;
