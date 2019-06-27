@@ -330,6 +330,9 @@
 .font16 {
   font-size: 16px; }
 
+.font20 {
+  font-size: 20px; }
+
 @media (max-width: 991px) {
   .n3px {
     margin-top: -3px;
@@ -3916,6 +3919,10 @@ main strong {
   border-color: #D20018;
   background-color: #D20018; }
 
+.custom-control-input:disabled ~ .custom-control-label::before {
+  border-color: #CCC;
+  background: #FFF; }
+
 .custom-control .custom-control-label::before {
   border-color: #292929; }
 .custom-control a {
@@ -4601,5 +4608,63 @@ main strong {
     .alert.alert-success::before {
       content: "\e90c";
       color: #5FCC37; }
+
+/* table
+*******************************************************************/
+.table.table-orders thead {
+  background: #000;
+  color: #FFF; }
+  .table.table-orders thead th {
+    font-weight: 400; }
+.table.table-orders tbody tr {
+  box-shadow: 0 0 0 2px #FFF inset, 0 0 0 3px #e2e2e2 inset; }
+  .table.table-orders tbody tr[data-href] {
+    cursor: pointer; }
+  .table.table-orders tbody tr i {
+    color: #D20018;
+    transition: color ease-in .2s; }
+  .table.table-orders tbody tr:nth-of-type(2n+1) {
+    background: #fbfbfb; }
+    .table.table-orders tbody tr:nth-of-type(2n+1)[data-href]:hover {
+      background: #EFF5F8; }
+  .table.table-orders tbody tr[data-href]:hover {
+    background: #EFF5F8; }
+    .table.table-orders tbody tr[data-href]:hover i {
+      color: #292929; }
+  .table.table-orders tbody tr th,
+  .table.table-orders tbody tr td {
+    border: 0;
+    vertical-align: middle; }
+
+/* status
+*******************************************************************/
+.status {
+  color: #FFF;
+  padding: 3px 10px;
+  line-height: 1em;
+  display: inline-block; }
+  .status.status-new {
+    background: #A39191; }
+  .status.status-approved {
+    background: #4E8EC4; }
+  .status.status-in-progress {
+    background: #DDB83E; }
+  .status.status-cancel {
+    background: #F43800; }
+  .status.status-done {
+    background: #5FCC37; }
+
+/* pagination
+*******************************************************************/
+.pagination {
+  margin-bottom: 0; }
+  .pagination .page-item {
+    margin-bottom: 0; }
+    .pagination .page-item.active .page-link {
+      background: #000;
+      color: #FFF;
+      border-color: #000; }
+    .pagination .page-item .page-link {
+      color: #000; }
 
 /*# sourceMappingURL=app.css.map */

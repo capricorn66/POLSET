@@ -305,55 +305,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
 
-
-    <script>
-
-        $(function() {
-
-            $('#miXItUp').mixItUp({
-                layout: {
-                    display: 'flex',
-                }
-            });
-
-            var inputText;
-            var $matching = $();
-
-            var delay = (function(){
-                var timer = 0;
-                return function(callback, ms){
-                    clearTimeout (timer);
-                    timer = setTimeout(callback, ms);
-                };
-            })();
-
-            $("#miXItUp-search").keyup(function(){
-                delay(function(){
-                    inputText = $("#miXItUp-search").val().toLowerCase();
-
-                    if ((inputText.length) > 0) {
-                        $( '.mix').each(function() {
-                            $this = $("this");
-                            if($('.product-card-name', this).text().toLowerCase().match(inputText)) {
-                                $matching = $matching.add(this);
-                            }
-                            else {
-                                $matching = $matching.not(this);
-                            }
-                        });
-                        $("#miXItUp").mixItUp('filter', $matching);
-                    }
-
-                    else {
-                        $("#miXItUp").mixItUp('filter', 'all');
-                    }
-                }, 200 );
-            });
-        })
-
-
-    </script>
-
-
 </body>
 </html>

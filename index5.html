@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POLSET</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-md">
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/polset-logo-white.svg" alt="sklep polset">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="" class="basket"><i class="icon-basket"></i><sub class="badge">2</sub></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUKTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CENNIK</a>
+                        </li>
+                    </ul>
+                    <ul class="userbar-nav">
+                        <li class="nav-item">
+                            <i class="icon-user"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Moje Zamówienia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Moje Dane</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-white" href="#">WYLOGUJ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="mainContent">
+
+        <div class="container">
+
+            <div class="backward">
+                <a href=""><i class="icon-transfer-left"></i> wróć do listy produktów</a>
+            </div>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Moje zamówienia</li>
+                </ol>
+            </nav>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between flex-wrap mb-20">
+                <div class="mb-20">
+                    <a href="" class="btn btn-outline-black"><i class="icon-printer mr-5"></i> Drukuj</a>
+                </div>
+                <div class="mb-20">
+                    <span class="mr-10">Pobierz</span>
+                    <a href="" class="btn btn-outline-black">PDF</a>
+                    <a href="" class="btn btn-outline-black">CSV</a>
+                    <a href="" class="btn btn-outline-black">Excel</a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row mb-30 justify-content-between align-items-md-center">
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <span class="mr-30">Wyświetlono 1-10 z 215</span>
+                        <label for="pagerSelect" class="mr-10">Wyświetl na stronie</label>
+                        <select class="custom-select" id="pagerSelect">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </form>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="table-responsive mb-20">
+
+                <table class="table table-orders table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">LP</th>
+                    <th scope="col">Kod</th>
+                    <th scope="col">Data zamówienia</th>
+                    <th scope="col">Ilość produktów</th>
+                    <th scope="col">Wartość zamówienia</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="text-center">Szczegóły</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-href="/zamowienie?11">
+                    <td class="text-center">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"></label>
+                        </div>
+                    </td>
+                    <th scope="row">1</th>
+                    <td>ABC123</td>
+                    <td>
+                        <strong>2019.07.16</strong><br>
+                        17:55:25
+                    </td>
+                    <td>20</td>
+                    <td><strong>20 943,30</strong> EUR</td>
+                    <td><div class="status status-new">NOWE</div></td>
+                    <td class="text-center"><span><i class="icon-eye font20"></i></span></td>
+                </tr>
+                <tr data-href="/zamowienie?22">
+                    <td class="text-center">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2"></label>
+                        </div>
+                    </td>
+                    <th scope="row">1</th>
+                    <td>ABC123</td>
+                    <td>
+                        <strong>2019.07.16</strong><br>
+                        17:55:25
+                    </td>
+                    <td>20</td>
+                    <td><strong>20 943,30</strong> EUR</td>
+                    <td><div class="status status-approved">ZATWIERDZONE</div></td>
+                    <td class="text-center"><span><i class="icon-eye font20"></i></span></td>
+                </tr>
+                <tr data-href="/zamowienie?33">
+                    <td class="text-center">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"></label>
+                        </div>
+                    </td>
+                    <th scope="row">1</th>
+                    <td>ABC123</td>
+                    <td>
+                        <strong>2019.07.16</strong><br>
+                        17:55:25
+                    </td>
+                    <td>20</td>
+                    <td><strong>20 943,30</strong> EUR</td>
+                    <td><div class="status status-in-progress">W REALIZACJI</div></td>
+                    <td class="text-center"><span><i class="icon-eye font20"></i></span></td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" disabled>
+                            <label class="custom-control-label" for="customCheck4"></label>
+                        </div>
+                    </td>
+                    <th class="gray-300" scope="row">1</th>
+                    <td class="gray-300">ABC123</td>
+                    <td class="gray-300">
+                        <strong>2019.07.16</strong><br>
+                        17:55:25
+                    </td>
+                    <td class="gray-300">20</td>
+                    <td class="gray-300"><strong>20 943,30</strong> EUR</td>
+                    <td><div class="status status-cancel">ANULOWANE</div></td>
+                    <td class="text-center"><span><i class="icon-eye font20"></i></span></td>
+                </tr>
+                <tr data-href="/zamowienie?55">
+                    <td class="text-center">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5"></label>
+                        </div>
+                    </td>
+                    <th scope="row">1</th>
+                    <td>ABC123</td>
+                    <td>
+                        <strong>2019.07.16</strong><br>
+                        17:55:25
+                    </td>
+                    <td>20</td>
+                    <td><strong>20 943,30</strong> EUR</td>
+                    <td><div class="status status-done">ZREALIZOWANE</div></td>
+                    <td class="text-center"><span><i class="icon-eye font20"></i></span></td>
+                </tr>
+                </tbody>
+            </table>
+
+            </div>
+
+
+            <div class="d-flex flex-column flex-md-row mb-30 justify-content-between align-items-md-center">
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <span class="mr-30">Wyświetlono 1-10 z 215</span>
+                        <label for="pagerSelect" class="mr-10">Wyświetl na stronie</label>
+                        <select class="custom-select" id="pagerSelect">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </form>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <a class="brand" href="#">
+                        <img src="images/polset-logo-white.svg" alt="sklep polset">
+                    </a>
+                    <p>
+                        ul. Bohaterów Westerplatte 4/5<br>
+                        65-034 Zielona Góra<br>
+                        Polska
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h6>KONTAKT</h6>
+                    <p>
+                        <a href="">info@polset.pl</a><br>
+                        tel. <strong>+48 68 383 64 61</strong><br>
+                        fax <strong>+48 68 383 07 54</strong>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h6>MENU</h6>
+                    <ul>
+                        <li>
+                            <a href="">Pomoc</a>
+                        </li>
+                        <li>
+                            <a href="">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="">Polityka prywatności</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-right d-none d-lg-block">
+                    <div class="img-light">
+                        <img src="images/armchair-polset.png" height="380" width="367"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+    <div class="bs4-xxl d-none d-xxl-block"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
+
+
+    <script>
+
+        $(function() {
+
+            $('.table-orders tbody tr[data-href]').each( function() {
+                rowClick(this);
+            })
+
+        });
+
+        function rowClick(elem, href) {
+
+            var $this = $(elem),
+                href = $this.attr('data-href');
+
+            $this.click( function() {
+                window.location.href = href;
+            })
+
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>

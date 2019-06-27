@@ -1,0 +1,39 @@
+/* pagination
+*******************************************************************/
+
+.pagination {
+    margin-bottom: 0;
+    .page-item {
+        margin-bottom: 0;
+        &.active {
+            .page-link {
+                background: $black;
+                color: $white;
+                border-color: $black;
+            }
+        }
+        .page-link {
+            color: $black;
+        }
+    }
+}
+
+@media (max-width: 1479px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

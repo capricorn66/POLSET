@@ -1,0 +1,68 @@
+/* table
+*******************************************************************/
+.table {
+    &.table-orders {
+        thead {
+            background: $black;
+            color: $white;
+            th {
+                font-weight: 400;
+            }
+        }
+        tbody {
+            tr {
+                box-shadow: 0 0 0 2px $white inset, 0 0 0 3px $gray-200 inset;
+                &[data-href] {
+                    cursor: pointer;
+                }
+                i {
+                    color: $app-color-1;
+                    transition: color ease-in .2s;
+                }
+                &:nth-of-type(2n+1) {
+                    background: lighten( $gray-100, 2% );
+                    &[data-href]:hover {
+                        background: $app-color-3;
+                    }
+                }
+                &[data-href]:hover {
+                    background: $app-color-3;
+                    i {
+                        color: $gray-900;
+                    }
+                }
+                th,
+                td {
+                    border: 0;
+                    vertical-align: middle;
+                }
+
+
+            }
+
+        }
+
+
+
+    }
+}
+
+@media (max-width: 1479px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}

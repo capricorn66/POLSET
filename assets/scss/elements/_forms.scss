@@ -16,6 +16,11 @@
     background-color: $app-color-1;
 }
 
+.custom-control-input:disabled ~ .custom-control-label::before {
+    border-color: $gray-300;
+    background: $white;
+}
+
 .custom-control {
     .custom-control-label::before {
         border-color: $gray-900;
@@ -31,5 +36,4 @@
     background-color: $black;
     border-color: $black;
     color: $white;
-
 }

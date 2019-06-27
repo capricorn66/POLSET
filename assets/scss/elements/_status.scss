@@ -1,0 +1,43 @@
+/* status
+*******************************************************************/
+.status {
+    color: $white;
+    padding: 3px 10px;
+    line-height: 1em;
+    display: inline-block;
+    &.status-new {
+        background: #A39191;
+    }
+    &.status-approved {
+        background: #4E8EC4;
+    }
+    &.status-in-progress {
+        background: #DDB83E;
+    }
+    &.status-cancel {
+        background: #F43800;
+    }
+    &.status-done {
+        background: #5FCC37;
+    }
+}
+
+@media (max-width: 1479px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
+}
