@@ -30,7 +30,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="" class="basket"><i class="icon-basket"></i><sub class="badge">2</sub></a>
+                <button class="basket" onclick="$('.basket-aside').addClass('opened')"><i class="icon-basket"></i><sub class="badge">2</sub></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-lg-auto">
                         <li class="nav-item">
@@ -135,7 +135,85 @@
         </div>
     </footer>
 
+    <div class="basket-aside">
+        <div class="basket-aside-header">
+            <span class="colse-btn" onclick="$('.basket-aside').removeClass('opened')"><i class="icon-close"></i></span>
+            Koszyk
+        </div>
+        <div class="basket-aside-body">
+            <div class="basket-product-list">
 
+                <div class="basket-product-list-row">
+                    <div class="col-product">
+                        <div class="col-product-img" data-new="NOWOŚĆ">
+                            <img src="images/armchairs/armchair-1.png" height="296" width="296"/>
+                        </div>
+                        <div class="col-product-desc">
+                            <h2>Alvesta Pillow Armchair Black Metal</h2>
+                            <div class="col-unit-price">
+                                <strong>250,00</strong> EUR
+                            </div>
+                            <div class="col-amount">
+                                20 szt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-product-list-row">
+                    <div class="col-product">
+                        <div class="col-product-img" data-new="NOWOŚĆ">
+                            <img src="images/chairs/chair-1.png" height="296" width="296"/>
+                        </div>
+                        <div class="col-product-desc">
+                            <h2>Jessica Chair</h2>
+                            <div class="col-unit-price">
+                                <strong>250,00</strong> EUR
+                            </div>
+                            <div class="col-amount">
+                                20 szt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-product-list-row">
+                    <div class="col-product">
+                        <div class="col-product-img">
+                            <img src="images/chairs/chair-2.png" height="296" width="296"/>
+                        </div>
+                        <div class="col-product-desc">
+                            <h2>Jessica Chair</h2>
+                            <div class="col-unit-price">
+                                <strong>250,00</strong> EUR
+                            </div>
+                            <div class="col-amount">
+                                20 szt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-product-list-summary">
+
+                    Wartość zamówienia
+
+                    <div class="basket-price">
+                        9 610,00 <small>EUR</small>
+                    </div>
+
+                </div>
+                <div class="text-right mb-80">
+
+                    <small>*Cena nie zawiera kosztów dostawy (<strong>EXW Krosno Odrzańskie</strong>)</small>
+
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg px-60">ZAMAWIAM</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     <div class="bs4-xs d-block d-sm-none"></div>
     <div class="bs4-sm d-none d-sm-block d-md-none"></div>
