@@ -10,10 +10,16 @@
 .white {
     color: $white;
 }
+.bg-white {
+    background: $white;
+}
 .black {
     color: $black;
 }
-
+.bg-black {
+    background: #000000;
+    background: linear-gradient(to bottom,  #000000 0%,#222222 100%);
+}
 .gray-100 {
     color: $gray-100;
 }

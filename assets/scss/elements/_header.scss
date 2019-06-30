@@ -12,6 +12,7 @@ header {
     margin-bottom: 54px;
     width: 100%;
     letter-spacing: .075em;
+    min-height: 86px;
 
     .container {
         padding-top: 20px;
@@ -20,8 +21,6 @@ header {
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        background: -moz-linear-gradient(left,  #000000 27%, #414141 52%, $gray-800 56%, #000000 84%);
-        background: -webkit-linear-gradient(left,  #000000 27%,#414141 52%, $gray-800 56%,#000000 84%);
         background: linear-gradient(to right,  #000000 27%,#414141 52%, $gray-800 56%,#000000 84%);
     }
 
@@ -212,7 +211,8 @@ header {
         }
 
         .basket {
-
+            background: none;
+            border: 0;
             @media (min-width: 768px) {
                 -ms-flex-order: 13;
                 order: 13;

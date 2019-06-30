@@ -1,8 +1,99 @@
 /* basket
 *******************************************************************/
-.basket {
+.basket-aside {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    height: 100vh;
+    width: 400px;
+    background: $white;
+    z-index: 11;
+    box-shadow: 0 0 20px 0 rgba($black,.2);
+    transition: transform ease-out .3s;
+    transform: translateX(0);
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 
-    .basket-product-list {
+    &.opened {
+        transform: translateX(-400px);
+    }
+
+    @media (max-width: 480px) {
+        width: 90vw;
+        &.opened {
+            transform: translateX(-90vw);
+        }
+
+    }
+
+    .basket-aside-header {
+        background: linear-gradient(to right, $gray-900 0, $gray-900 16%, #000000 44%);
+        min-height: 86px;
+        position: relative;
+        color: $white;
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        .colse-btn {
+            color: $app-color-1;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            margin-top: -12px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: color ease-in .2s;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .basket-aside-body {
+        padding: 20px;
+        .basket-product-list {
+            .col-product {
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                .col-product-img {
+                    -ms-flex-preferred-size: 140px;
+                    flex-basis: 140px;
+                    min-width: 140px;
+                }
+                .col-product-desc {
+                    h2 {
+                        font-size: 18px;
+                        margin-bottom: 25px;
+                    }
+                    -ms-flex-preferred-size: auto;
+                    flex-basis: auto;
+                    min-width: auto;
+
+                }
+            }
+            .col-amount,
+            .col-unit-price {
+                text-align: left;
+            }
+            .basket-product-list-summary {
+                display: block;
+                text-align: center;
+                padding: 20px 5% 25px;
+                .basket-price {
+                    margin-left: 0;
+                    margin-top: 20px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+}
+
+.basket-product-list {
 
         .basket-product-list-head {
             border-bottom: 1px solid $gray-200;
@@ -24,7 +115,6 @@
                     display: none;
                 }
             }
-
         }
 
         .basket-product-list-row {
@@ -329,6 +419,7 @@
 
     }
 
+.basket {
     &.basket-orderPreview {
         .basket-product-list {
             .col-amount {

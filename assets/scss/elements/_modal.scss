@@ -4,8 +4,6 @@
     .modal-content {
         border-radius: 0;
         .modal-header {
-            background: -moz-linear-gradient(left, #414141 17%, $gray-800 26%, #000000 44%);
-            background: -webkit-linear-gradient(left, #414141 17%, $gray-800 26%, #000000 44%);
             background: linear-gradient(to right, #414141 17%, $gray-800 26%, #000000 44%);
 
             .modal-title {

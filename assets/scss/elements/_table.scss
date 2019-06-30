@@ -36,13 +36,50 @@
                     border: 0;
                     vertical-align: middle;
                 }
-
-
             }
-
         }
-
-
+    }
+    &.table-price-list {
+        border: 1px solid $gray-200;
+        thead {
+            background: lighten( $gray-200, 5% );
+            th {
+                font-weight: 700;
+                border-bottom-width: 1px;
+                vertical-align: middle;
+                text-align: center;
+                &:first-child {
+                    border-right: 1px solid $gray-200;
+                }
+            }
+            .th-label {
+                text-align: right;
+                display: block;
+                color: $gray-400;
+            }
+            .td-label {
+                text-align: left;
+                display: block;
+                color: $gray-400;
+            }
+        }
+        tbody {
+            tr {
+                &:nth-of-type(2n+1) {
+                    background: lighten( $gray-100, 2% );
+                }
+                th,
+                td {
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                th {
+                    border-right: 1px solid $gray-200;
+                    text-align: left;
+                    font-weight: 600;
+                }
+            }
+        }
 
     }
 }
