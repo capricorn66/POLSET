@@ -115,6 +115,10 @@
                     display: none;
                 }
             }
+            .col-price,
+            .col-unit-price {
+                font-size: 15px;
+            }
         }
 
         .basket-product-list-row {
@@ -282,6 +286,7 @@
             flex-basis: 140px;
             min-width: 140px;
             text-align: center;
+            font-size: 18px;
             .title {
                 display: none;
                 margin-bottom: 20px;
@@ -351,6 +356,7 @@
             flex-basis: 140px;
             min-width: 140px;
             text-align: center;
+            font-size: 18px;
             .title {
                 display: none;
                 margin-bottom: 20px;

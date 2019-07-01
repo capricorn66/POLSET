@@ -349,6 +349,9 @@
     margin-left: -3px;
     margin-right: -3px; } }
 
+.mt-n10 {
+  margin-top: -10px; }
+
 .mt-5 {
   margin-top: 5px !important; }
 
@@ -3395,7 +3398,7 @@
   padding: 0;
   background: none;
   font-weight: 300;
-  margin: 10px 0 60px !important;
+  margin: 10px 0 40px !important;
   font-size: 28px;
   border-bottom: 1px solid #292929; }
   @media (max-width: 991px) {
@@ -3409,12 +3412,13 @@
       font-size: 16px; } }
   .breadcrumb .breadcrumb-item {
     color: #292929;
-    font-weight: 600; }
+    font-weight: 400; }
     .breadcrumb .breadcrumb-item a {
       color: #292929; }
     .breadcrumb .breadcrumb-item.active {
       color: #292929;
-      font-weight: 400; }
+      font-weight: 600;
+      letter-spacing: 2px; }
 
 /* buttons
 *******************************************************************/
@@ -3566,7 +3570,7 @@ body {
   line-height: 1.4em;
   overflow-x: hidden;
   font-weight: 500;
-  padding-top: 140px;
+  padding-top: 110px;
   min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
@@ -3624,7 +3628,7 @@ header {
   z-index: 3;
   background: #000;
   color: #FFF;
-  margin-bottom: 54px;
+  margin-bottom: 24px;
   width: 100%;
   letter-spacing: .075em;
   min-height: 86px; }
@@ -3947,22 +3951,17 @@ main strong {
 *******************************************************************/
 .controls {
   margin-bottom: 20px;
-  margin-top: -10px;
   padding-bottom: 10px;
-  padding-top: 10px;
-  position: sticky;
+  padding-top: 20px;
+  position: relative;
   background: #FFF;
   z-index: 2;
-  top: 86px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media (max-width: 991px) {
-    .controls {
-      position: static; } }
   .controls .btn-control {
     background: transparent;
     border: 2px solid #CCC;
@@ -4005,8 +4004,8 @@ main strong {
   padding-bottom: 10px; }
 
 .productList {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative; }
   .productList .product-card {
     position: relative;
@@ -4040,18 +4039,22 @@ main strong {
       flex-direction: column;
       -ms-flex-positive: 1;
       flex-grow: 1;
-      padding: 10px 20px 30px; }
+      padding: 10px 8px 30px; }
       .productList .product-card .product-card-body .product-card-name {
         font-size: 16px;
         margin-bottom: 10px;
         -ms-flex-positive: 1;
-        flex-grow: 1; }
+        flex-grow: 1;
+        letter-spacing: 0.05em; }
       .productList .product-card .product-card-body .product-card-price {
         font-size: 16px;
         margin-bottom: 20px; }
       .productList .product-card .product-card-body .btn {
         padding-left: 50px;
-        padding-right: 50px; }
+        padding-right: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px; }
         .productList .product-card .product-card-body .btn .product-card-btn {
           position: absolute;
           top: 0;
@@ -4118,52 +4121,53 @@ main strong {
       opacity: .4; }
   .productCard .productCard-desc p {
     margin-bottom: 10px; }
-.productCard .productCard-summary {
+
+.productCard-summary {
+  width: 100vw;
   background: #e2e2e2;
   padding: 30px 5% 15px;
   position: sticky;
   bottom: 0;
-  font-size: 18px;
-  margin-bottom: 10px; }
+  font-size: 18px; }
   @media (max-width: 991px) {
-    .productCard .productCard-summary {
+    .productCard-summary {
       position: relative; } }
   @media (max-width: 767px) {
-    .productCard .productCard-summary {
+    .productCard-summary {
       padding: 20px 5% 5px;
       font-size: 20px; } }
   @media (max-width: 575px) {
-    .productCard .productCard-summary {
+    .productCard-summary {
       padding: 15px 5% 0;
       font-size: 18px; } }
-  .productCard .productCard-summary h4 {
+  .productCard-summary h4 {
     margin-bottom: 2px; }
-  .productCard .productCard-summary .product-price {
+  .productCard-summary .product-price {
     font-size: 50px;
     white-space: nowrap;
     font-weight: 500;
     margin-left: 25px; }
     @media (max-width: 1199px) {
-      .productCard .productCard-summary .product-price {
+      .productCard-summary .product-price {
         font-size: 45px; } }
     @media (max-width: 991px) {
-      .productCard .productCard-summary .product-price {
+      .productCard-summary .product-price {
         font-size: 40px;
         margin-left: 0; } }
     @media (max-width: 767px) {
-      .productCard .productCard-summary .product-price {
+      .productCard-summary .product-price {
         font-size: 30px; } }
     @media (max-width: 575px) {
-      .productCard .productCard-summary .product-price {
+      .productCard-summary .product-price {
         font-size: 30px; } }
-    .productCard .productCard-summary .product-price small {
+    .productCard-summary .product-price small {
       font-size: 24px;
       font-weight: 400; }
       @media (max-width: 767px) {
-        .productCard .productCard-summary .product-price small {
+        .productCard-summary .product-price small {
           font-size: 18px; } }
       @media (max-width: 575px) {
-        .productCard .productCard-summary .product-price small {
+        .productCard-summary .product-price small {
           font-size: 16px; } }
 
 /* basket
@@ -4255,6 +4259,9 @@ main strong {
     .basket-product-list .basket-product-list-head .col-price,
     .basket-product-list .basket-product-list-head .col-remove {
       display: none; } }
+  .basket-product-list .basket-product-list-head .col-price,
+  .basket-product-list .basket-product-list-head .col-unit-price {
+    font-size: 15px; }
 .basket-product-list .basket-product-list-row {
   border-bottom: 1px solid #e2e2e2;
   padding: 20px 0;
@@ -4395,7 +4402,8 @@ main strong {
   -ms-flex-preferred-size: 140px;
   flex-basis: 140px;
   min-width: 140px;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
   .basket-product-list .col-unit-price .title {
     display: none;
     margin-bottom: 20px;
@@ -4452,7 +4460,8 @@ main strong {
   -ms-flex-preferred-size: 140px;
   flex-basis: 140px;
   min-width: 140px;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
   .basket-product-list .col-price .title {
     display: none;
     margin-bottom: 20px;

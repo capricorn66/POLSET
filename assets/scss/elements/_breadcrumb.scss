@@ -83,7 +83,7 @@
     padding: 0;
     background: none;
     font-weight: 300;
-    margin: 10px 0 60px !important;
+    margin: 10px 0 40px !important;
     font-size: 28px;
     @media (max-width: 991px) {
         font-size: 24px;
@@ -97,13 +97,14 @@
     border-bottom: 1px solid $gray-900;
     .breadcrumb-item {
         color: $gray-900;
-        font-weight: 600;
+        font-weight: 400;
         a {
             color: $gray-900;
         }
         &.active {
             color: $gray-900;
-            font-weight: 400;
+            font-weight: 600;
+            letter-spacing: 2px;
         }
     }
 }

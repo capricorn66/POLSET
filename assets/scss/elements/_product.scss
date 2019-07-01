@@ -3,13 +3,11 @@
 
 .controls {
     margin-bottom: 20px;
-    margin-top: -10px;
     padding-bottom: 10px;
-    padding-top: 10px;
-    position: sticky;
+    padding-top: 20px;
+    position: relative;
     background: $white;
     z-index: 2;
-    top: 86px;
 
     display: -ms-flexbox;
     display: flex;
@@ -17,11 +15,6 @@
     flex-wrap: wrap;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
-    @media (max-width: 991px) {
-        position: static;
-    }
-
 
     .btn-control {
         background: transparent;
@@ -72,8 +65,8 @@
 }
 
 .productList {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     .product-card {
         position: relative;
@@ -113,12 +106,13 @@
             flex-direction: column;
             -ms-flex-positive: 1;
             flex-grow: 1;
-            padding: 10px 20px 30px;
+            padding: 10px 8px 30px;
             .product-card-name {
                 font-size: 16px;
                 margin-bottom: 10px;
                 -ms-flex-positive: 1;
                 flex-grow: 1;
+                letter-spacing: .05em
             }
             .product-card-price {
                 font-size: 16px;
@@ -127,6 +121,9 @@
             .btn {
                 padding-left: 50px;
                 padding-right: 50px;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1px;
                 .product-card-btn {
                     position: absolute;
                     top: 0;
@@ -226,8 +223,10 @@
         }
     }
 
+}
 
-    .productCard-summary {
+.productCard-summary {
+        width: 100vw;
         background: $gray-200;
         padding: 30px 5% 15px;
         position: sticky;
@@ -236,7 +235,6 @@
         }
         bottom: 0;
         font-size: 18px;
-        margin-bottom: 10px;
         @media (max-width: 767px) {
             padding: 20px 5% 5px;
             font-size: 20px;
@@ -280,7 +278,6 @@
         }
     }
 
-}
 
 @media (max-width: 1479px) {
 
