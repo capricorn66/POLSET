@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POLSET</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/startPage.min.css">
+
+</head>
+<body class="startPage">
+
+    <div class="container py-40 d-flex flex-column justify-content-center flex-grow-1">
+        <div class="bg-white py-40 px-20">
+
+            <img src="images/polset-logo-black.svg" alt="POLSET" class="brand">
+            <div class="text-center">
+                <h2>System zamówień <small>REJESTRACJA</small></h2>
+            </div>
+
+            <div class="row justify-content-center pt-40 pb-10">
+                <div class="col-md-8 col-lg-6 col-xxl-4">
+
+                    <ul class="nav nav-tabs mb-50" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="company-tab" data-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Firma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="personal" aria-selected="false">Osoba fizyczna</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="company-login">Login (adres e-mail)</label>
+                                    <input type="text" class="form-control" id="company-login" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company-pass">Hasło</label>
+                                    <div class="form-control-pass">
+                                        <input type="password" class="form-control" id="company-pass" placeholder="Wpisz hasło">
+                                        <button type="button" class="btn btn-pass" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                            <i class="icon-eye"></i>
+                                            <i class="icon-eye-slash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="clearfix mb-60"></div>
+
+                                <div class="form-group">
+                                    <label for="company-name">Nazwa firmy</label>
+                                    <input type="text" class="form-control" id="company-name" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company-nip">Numer NIP</label>
+                                    <input type="text" class="form-control" id="company-nip" placeholder="">
+                                </div>
+                                <div class="clearfix mb-60"></div>
+
+                                <div class="form-group">
+                                    <label for="company-street">Adres firmy (ulica i numer)</label>
+                                    <input type="text" class="form-control" id="company-street" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company-postcode">Adres firmy (kod pocztowy i miejscowość)</label>
+                                    <input type="text" class="form-control" id="company-postcode" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company-country">Adres firmy (kraj)</label>
+                                    <input type="text" class="form-control" id="company-country" placeholder="">
+                                </div>
+                                <div class="clearfix mb-60"></div>
+
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="company-customCheck1">
+                                    <label class="custom-control-label" for="company-customCheck1">Oświadczam, że zapoznałem się z <a href="">Regulaminem</a></label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-40">
+                                    <input type="checkbox" class="custom-control-input" id="company-customCheck2">
+                                    <label class="custom-control-label" for="company-customCheck2">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z <a href="">Polityką prywatności </a></label>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg btn-primary btn-block mb-20">ZAREJESTRUJ SIĘ</button>
+
+                                <div class="text-center mb-30">
+                                    <a href="">Masz już konta? <a href="">Zaloguj się</a></a>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    <a href="" class="px-10">Regulamin</a>
+                                    <a href="" class="px-10">Polityka prywatności</a>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="personal-login">Login (adres e-mail)</label>
+                                    <input type="text" class="form-control" id="personal-login" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="personal-pass">Hasło</label>
+                                    <div class="form-control-pass">
+                                        <input type="password" class="form-control" id="personal-pass" placeholder="Wpisz hasło">
+                                        <button type="button" class="btn btn-pass" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                            <i class="icon-eye"></i>
+                                            <i class="icon-eye-slash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="clearfix mb-60"></div>
+
+                                <div class="form-group">
+                                    <label for="personal-name">Imię</label>
+                                    <input type="text" class="form-control" id="personal-name" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="personal-surname">Nazwisko</label>
+                                    <input type="text" class="form-control" id="personal-surname" placeholder="">
+                                </div>
+                                <div class="clearfix mb-60"></div>
+
+                                <div class="form-group">
+                                    <label for="personal-street">Adres (ulica i numer)</label>
+                                    <input type="text" class="form-control" id="personal-street" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="personal-postcode">Adres (kod pocztowy i miejscowość)</label>
+                                    <input type="text" class="form-control" id="personal-postcode" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="personal-country">Adres (kraj)</label>
+                                    <input type="text" class="form-control" id="personal-country" placeholder="">
+                                </div>
+                                <div class="clearfix mb-60"></div>
+
+                                <div class="custom-control custom-checkbox mb-10">
+                                    <input type="checkbox" class="custom-control-input" id="personal-customCheck1">
+                                    <label class="custom-control-label" for="personal-customCheck1">Oświadczam, że zapoznałem się z <a href="">Regulaminem</a></label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-40">
+                                    <input type="checkbox" class="custom-control-input" id="personal-customCheck2">
+                                    <label class="custom-control-label" for="personal-customCheck2">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z <a href="">Polityką prywatności </a></label>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg btn-primary btn-block mb-20">ZAREJESTRUJ SIĘ</button>
+
+                                <div class="text-center mb-30">
+                                    <a href="">Masz już konta? <a href="">Zaloguj się</a></a>
+                                </div>
+
+                                <div class="text-center text-muted">
+                                    <a href="" class="px-10">Regulamin</a>
+                                    <a href="" class="px-10">Polityka prywatności</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready( function() {
+
+            $('.btn-pass').click(function(e) {
+                if($(this).hasClass('active')) {
+                    $(this).prev().attr('type', 'password')
+                }
+                else {
+                    $(this).prev().attr('type', 'text')
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>

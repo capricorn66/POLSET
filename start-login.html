@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POLSET</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/startPage.min.css">
+
+</head>
+<body class="startPage">
+
+    <div class="container py-20 d-flex flex-column justify-content-center flex-grow-1">
+
+        <div class="row no-gutters justify-content-center">
+            <div class="col-lg-6 col-xl-5 justify-content-center align-items-center bg-black d-none d-lg-flex">
+                <img src="images/armchair-polset.png" height="380" width="367"/>
+            </div>
+            <div class="col-lg-6 col-xl-5 bg-white py-40">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-lg-8">
+                        <img src="images/polset-logo-black.svg" alt="POLSET" class="brand">
+                        <div class="text-center">
+                            <h2>System zamówień <small>LOGOWANIE</small></h2>
+                        </div>
+
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Login (adres e-mail)">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-control-pass">
+                                    <input type="password" class="form-control" id="pass" placeholder="Wpisz hasło">
+                                    <button type="button" class="btn btn-pass" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                        <i class="icon-eye"></i>
+                                        <i class="icon-eye-slash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="text-right mb-50">
+                                <a href="">Nie pamiętasz hasła?</a>
+                            </div>
+
+                            <div class="custom-control custom-checkbox mb-10">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Oświadczam, że zapoznałem się z <a href="">Regulaminem</a></label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-40">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Zgadzam się na przetwarzanie moich danych osobowych zgodnie z <a href="">Polityką prywatności </a></label>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-primary btn-block mb-20">ZALOGUJ SIĘ</button>
+
+                            <div class="text-center mb-30">
+                                <a href="">Nie masz konta? <a href="">Zarejestruj się</a></a>
+                            </div>
+
+                            <div class="text-center text-muted">
+                                <a href="" class="px-10">Regulamin</a>
+                                <a href="" class="px-10">Polityka prywatności</a>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready( function() {
+
+            $('.btn-pass').click(function(e) {
+                if($(this).hasClass('active')) {
+                    $(this).prev().attr('type', 'password')
+                }
+                else {
+                    $(this).prev().attr('type', 'text')
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>

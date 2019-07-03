@@ -20,16 +20,38 @@
 
     <div class="container py-20 d-flex flex-column justify-content-center flex-grow-1">
         <div class="bg-white py-40 px-20">
+
             <img src="images/polset-logo-black.svg" alt="POLSET" class="brand">
             <div class="text-center pb-30">
-                <h2>System zamówień</h2>
+                <h2>Resetowanie hasła</h2>
             </div>
-            <div class="row justify-content-center py-40">
-                <div class="col-md-5 col-md-4 col-xxl-3 mb-20">
-                    <a href="" class="btn btn-block btn-lg btn-black ">LOGOWANIE <i class="icon-transfer-right"></i></a>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xxl-6">
+                    <div class="alert alert-secondary" role="alert">
+                        <small>W poniższym polu wpisz nowe hasło.</small>
+                    </div>
                 </div>
-                <div class="col-md-5 col-md-4 col-xxl-3 mb-20">
-                    <a href="" class="btn btn-block btn-lg btn-outline-black">REJESTRACJA <i class="icon-transfer-right"></i></a>
+            </div>
+
+
+            <div class="row justify-content-center py-40">
+                <div class="col-md-8 col-lg-6 col-xxl-4">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="pass">Hasło</label>
+                            <div class="form-control-pass">
+                                <input type="password" class="form-control" id="pass" placeholder="Wpisz hasło">
+                                <button type="button" class="btn btn-pass" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                    <i class="icon-eye"></i>
+                                    <i class="icon-eye-slash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary btn-block mb-20">USTAW NOWE HASŁO</button>
+                    </form>
+
                 </div>
             </div>
 
@@ -85,6 +107,20 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready( function() {
+
+            $('.btn-pass').click(function(e) {
+                if($(this).hasClass('active')) {
+                    $(this).prev().attr('type', 'password')
+                }
+                else {
+                    $(this).prev().attr('type', 'text')
+                }
+            })
+        })
+    </script>
 
 </body>
 </html>

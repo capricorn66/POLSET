@@ -3450,7 +3450,8 @@
   .btn-white:focus, .btn-white:hover {
     border-bottom: 4px solid #D20018;
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+    box-shadow: none; }
 
 .btn-outline-white {
   background: transparent;
@@ -3458,23 +3459,36 @@
   color: white; }
   .btn-outline-white:focus, .btn-outline-white:hover {
     background: white;
-    color: black; }
+    color: black;
+    box-shadow: none; }
 
 .btn-black {
   background: black;
   border: 1px solid black;
   color: white; }
+  .btn-black i {
+    color: #D20018; }
   .btn-black:focus, .btn-black:hover {
-    background: white;
-    color: black; }
+    border: 1px solid #D20018;
+    background: #D20018;
+    color: white;
+    box-shadow: none; }
+    .btn-black:focus i, .btn-black:hover i {
+      color: white; }
 
 .btn-outline-black {
   background: transparent;
   border: 1px solid black;
   color: black; }
+  .btn-outline-black i {
+    color: #D20018; }
   .btn-outline-black:focus, .btn-outline-black:hover {
-    background: black;
-    color: white; }
+    border: 1px solid #D20018;
+    background: #D20018;
+    color: white;
+    box-shadow: none; }
+    .btn-outline-black:focus i, .btn-outline-black:hover i {
+      color: white; }
 
 .btn {
   padding-left: 15px;
@@ -3489,6 +3503,16 @@
   box-shadow: none; }
   .btn-setView.app-color-1:focus, .btn-setView.app-color-1:hover {
     color: #D20018; }
+
+.btn-lg {
+  padding: 10px 40px;
+  font-size: 1rem;
+  min-width: 200px;
+  letter-spacing: 1px; }
+  .btn-lg i {
+    position: absolute;
+    right: 34px;
+    font-size: 1.4rem; }
 
 .btn-xl {
   padding: 10px 80px;
@@ -3513,7 +3537,7 @@ footer {
   footer .container {
     font-size: 14px; }
     footer .container .brand {
-      margin-bottom: 32px;
+      margin: 0 0 32px;
       display: block; }
       footer .container .brand img {
         width: 232px;
@@ -4669,7 +4693,9 @@ main strong {
       .alert h2 {
         font-size: 24px; } }
   .alert small {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1.4em;
+    display: block; }
   .alert::before {
     font-family: 'icomoon' !important;
     speak: none;
@@ -4696,6 +4722,31 @@ main strong {
     .alert.alert-success::before {
       content: "\e90c";
       color: #5FCC37; }
+  .alert.alert-secondary {
+    text-align: left;
+    border-color: #CCC;
+    background: #fbfbfb;
+    color: #676767; }
+    @media (min-width: 768px) {
+      .alert.alert-secondary {
+        padding: 20px 40px 20px 80px; } }
+    .alert.alert-secondary::before {
+      font-size: 24px;
+      content: "\e90f";
+      color: #a7a9ac; }
+      @media (min-width: 768px) {
+        .alert.alert-secondary::before {
+          margin-top: -12px; } }
+  .alert.alert-danger {
+    border-color: #D20018; }
+    .alert.alert-danger::before {
+      content: "\e910";
+      color: #D20018; }
+  .alert.alert-warning {
+    border-color: #ffd300; }
+    .alert.alert-warning::before {
+      content: "\e90b";
+      color: #ffd300; }
 
 /* table
 *******************************************************************/

@@ -20,6 +20,8 @@
     }
     small {
         font-size: 16px;
+        line-height: 1.4em;
+        display: block;
     }
     &::before {
         font-family: 'icomoon' !important;
@@ -42,14 +44,47 @@
             display: block;
             margin-bottom: 10px;
         }
-
-
     }
+
     &.alert-success {
         border-color: $app-color-2;
         &::before {
             content: "\e90c";
             color: $app-color-2;
+        }
+    }
+
+    &.alert-secondary {
+        text-align: left;
+        @media (min-width: 768px) {
+            padding: 20px 40px 20px 80px;
+        }
+        border-color: $gray-300;
+        background: lighten($gray-100, 2%);
+        color: $gray-600;
+        &::before {
+            font-size: 24px;
+            content: "\e90f";
+            color: $gray-400;
+            @media (min-width: 768px) {
+                margin-top: -12px;
+            }
+        }
+    }
+
+    &.alert-danger {
+        border-color: $app-color-1;
+        &::before {
+            content: "\e910";
+            color: $app-color-1;
+        }
+    }
+
+    &.alert-warning {
+        border-color: $alert-yellow;
+        &::before {
+            content: "\e90b";
+            color: $alert-yellow;
         }
     }
 }
