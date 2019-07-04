@@ -4402,7 +4402,8 @@ main strong {
         .basket-product-list .col-product .col-product-img[data-new]::after {
           top: 0; } }
   .basket-product-list .col-product .col-product-desc {
-    font-size: 18px; }
+    font-size: 18px;
+    flex-grow: 1; }
     @media (max-width: 991px) {
       .basket-product-list .col-product .col-product-desc {
         font-size: 16px; } }
@@ -4422,6 +4423,43 @@ main strong {
         .basket-product-list .col-product .col-product-desc h2 {
           font-size: 18px;
           margin-bottom: 25px; } }
+.basket-product-list .col-product-comments {
+  margin-bottom: 40px; }
+  @media (min-width: 1480px) {
+    .basket-product-list .col-product-comments {
+      max-width: 70%; } }
+  .basket-product-list .col-product-comments .col-product-comments-btn {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    padding: 12px 0;
+    cursor: pointer; }
+    .basket-product-list .col-product-comments .col-product-comments-btn i {
+      font-size: 18px;
+      display: block;
+      width: 18px;
+      height: 18px;
+      position: relative;
+      top: 2px;
+      transition: transform ease-in .3s; }
+    .basket-product-list .col-product-comments .col-product-comments-btn:hover i {
+      transform: rotate(135deg); }
+    .basket-product-list .col-product-comments .col-product-comments-btn[aria-expanded="true"] {
+      border-bottom: 1px solid #fff; }
+      .basket-product-list .col-product-comments .col-product-comments-btn[aria-expanded="true"] i {
+        transform: rotate(135deg);
+        color: #D20018; }
+  .basket-product-list .col-product-comments .col-product-comments-collapse .form-control {
+    background: #fbfbfb;
+    border: 0;
+    border-bottom: 1px solid #000;
+    padding: 20px 15px; }
 .basket-product-list .col-unit-price {
   -ms-flex-preferred-size: 140px;
   flex-basis: 140px;
