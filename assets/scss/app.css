@@ -3406,10 +3406,7 @@
       font-size: 24px; } }
   @media (max-width: 767px) {
     .breadcrumb {
-      font-size: 18px; } }
-  @media (max-width: 575px) {
-    .breadcrumb {
-      font-size: 16px; } }
+      font-size: 20px; } }
   .breadcrumb .breadcrumb-item {
     color: #292929;
     font-weight: 400; }
@@ -3419,6 +3416,20 @@
       color: #292929;
       font-weight: 600;
       letter-spacing: 2px; }
+  .breadcrumb .btn.btn-link {
+    box-shadow: none;
+    font-weight: normal;
+    color: #000;
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px; }
+    @media (max-width: 991px) {
+      .breadcrumb .btn.btn-link {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: -6px; } }
+    .breadcrumb .btn.btn-link:hover {
+      color: #D20018; }
 
 /* buttons
 *******************************************************************/
@@ -3920,26 +3931,42 @@ h5 {
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: .075em; }
 
-.modal-body .lead,
-main .lead {
-  line-height: 1.5em;
-  font-weight: 500;
-  margin-bottom: 30px; }
-.modal-body p,
-main p {
-  line-height: 1.5em;
-  margin-bottom: 12px; }
-.modal-body ul, .modal-body ol,
-main ul,
-main ol {
-  margin-bottom: 30px; }
-.modal-body li,
-main li {
-  margin-bottom: 8px;
-  line-height: 1.5em; }
-.modal-body strong,
-main strong {
-  font-weight: 600; }
+.modal-body {
+  font-size: 18px; }
+  .modal-body .lead {
+    line-height: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px; }
+  .modal-body p {
+    line-height: 1.5em;
+    margin-bottom: 12px; }
+  .modal-body ul, .modal-body ol {
+    margin-bottom: 30px; }
+  .modal-body li {
+    margin-bottom: 8px;
+    line-height: 1.5em; }
+  .modal-body strong {
+    font-weight: 600; }
+  .modal-body ul:not([class]) {
+    list-style: none;
+    margin: 0 0 20px 20px; }
+    @media (max-width: 575px) {
+      .modal-body ul:not([class]) {
+        margin-left: 0; } }
+    .modal-body ul:not([class]) > li {
+      position: relative;
+      margin-bottom: 18px; }
+      .modal-body ul:not([class]) > li::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 4px solid #D20018;
+        left: -30px;
+        top: 4px; }
+      .modal-body ul:not([class]) > li ul, .modal-body ul:not([class]) > li ol {
+        margin: 15px 0 0; }
 
 /* forms
 *******************************************************************/
@@ -4194,6 +4221,45 @@ main strong {
         .productCard-summary .product-price small {
           font-size: 16px; } }
 
+.gallery-top .swiper-slide {
+  text-align: center; }
+  .gallery-top .swiper-slide img {
+    max-width: 100%;
+    height: auto; }
+.gallery-top .swiper-button-next,
+.gallery-top .swiper-button-prev {
+  background: #000;
+  color: #D20018;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 52px;
+  text-align: center; }
+  .gallery-top .swiper-button-next.swiper-button-disabled,
+  .gallery-top .swiper-button-prev.swiper-button-disabled {
+    opacity: 0; }
+@media (min-width: 768px) {
+  .gallery-top .swiper-button-next {
+    right: 0; }
+  .gallery-top .swiper-button-prev {
+    left: 0; } }
+
+@media (min-width: 768px) {
+  .gallery-thumbs {
+    margin-right: 50px;
+    margin-left: 50px; } }
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active div {
+  border: 1px solid #D20018; }
+.gallery-thumbs .swiper-slide div {
+  margin: auto;
+  width: 120px;
+  border: 1px solid #FFF;
+  transition: border .2s linear; }
+  .gallery-thumbs .swiper-slide div img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+
 /* basket
 *******************************************************************/
 .basket-aside {
@@ -4205,14 +4271,14 @@ main strong {
   width: 400px;
   background: #FFF;
   z-index: 11;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   transition: transform ease-out .3s;
   transform: translateX(0);
   overflow-y: auto;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch; }
   .basket-aside.opened {
-    transform: translateX(-400px); }
+    transform: translateX(-400px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 480px) {
     .basket-aside {
       width: 90vw; }

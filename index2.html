@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" integrity="sha256-XwfUNXGiAjWyUGBhyXKdkRedMrizx1Ejqo/NReYNdUE=" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/app.min.css">
@@ -70,28 +70,38 @@
             </div>
 
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb justify-content-between flex-column flex-lg-row">
                     <li class="breadcrumb-item active" aria-current="page">Alvesta Pillow Armchair Black Metal</li>
+
+                    <li>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#galleryModal">
+                            Galeria
+                        </button>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#descModal">
+                            Opis
+                        </button>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#dataModal">
+                            Dane techniczne
+                        </button>
+                    </li>
                 </ol>
             </nav>
 
             <div class="productCard">
 
-                <div class="row mb-30 mt-n10">
-                    <div class="col-md-4">
+                <div class="row mt-n10">
+                    <div class="col-md-3 mb-30">
                         1 z 42 produktów
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <div class="backward mr-20">
+                    <div class="col-md-6 mb-30 d-flex justify-content-center">
+                        <div class="backward mr-15">
                             <a href=""><i class="icon-transfer-left"></i> POPRZEDNI</a>
                         </div>
-                        <div class="forward ml-20">
+                        <div class="forward ml-15">
                             <a href="">NASTĘPNY <i class="icon-transfer-right"></i></a>
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="row no-gutters mb-60">
                     <div class="col-lg-4">
@@ -313,6 +323,137 @@
         </div>
     </div>
 
+    <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alvesta Pillow Armchair Black Metal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Swiper -->
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/armchairs/armchair-1-b.png" width="608" height="608"></div>
+                            <div class="swiper-slide"><img src="images/armchairs/armchair-1-b.png" width="608" height="608"></div>
+                            <div class="swiper-slide"><img src="images/armchairs/armchair-1-b.png" width="608" height="608"></div>
+                            <div class="swiper-slide"><img src="images/armchairs/armchair-1-b.png" width="608" height="608"></div>
+                            <div class="swiper-slide"><img src="images/armchairs/armchair-1-b.png" width="608" height="608"></div>
+                            <div class="swiper-slide"><img src="images/armchairs/armchair-1-b.png" width="608" height="608"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"><i class="icon-transfer-right"></i></div>
+                        <div class="swiper-button-prev swiper-button-white"><i class="icon-transfer-left"></i></div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><div><img src="images/armchairs/armchair-1.png" width="296" height="296"></div></div>
+                            <div class="swiper-slide"><div><img src="images/armchairs/armchair-1.png" width="296" height="296"></div></div>
+                            <div class="swiper-slide"><div><img src="images/armchairs/armchair-1.png" width="296" height="296"></div></div>
+                            <div class="swiper-slide"><div><img src="images/armchairs/armchair-1.png" width="296" height="296"></div></div>
+                            <div class="swiper-slide"><div><img src="images/armchairs/armchair-1.png" width="296" height="296"></div></div>
+                            <div class="swiper-slide"><div><img src="images/armchairs/armchair-1.png" width="296" height="296"></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="descModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alvesta Pillow Armchair Black Metal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h3 class="gray-500">Opis</h3>
+
+                    <ul>
+                        <li>Fotel <strong>Alvesta Pillow Armchair Black Metal</strong> to absolutnie ponadczasowa estetyka.</li>
+                        <li>Możliwość wyboru rodzaju tkaniny oraz koloru obicia sprawia, że można go dopasować do niemal każdego wnętrza. Na zdjęciach prezentujemy tylko kilka przykładowych wersji kolorystycznych.</li>
+                        <li>Znajdująca się w komplecie poduszka to doskonałe podparcie dla odcinka lędźwiowego.</li>
+                        <li>Opcjonalnie kupowany podnóżek zwiększa komfort siedzenia, dając podparcie dla zmęczonych nóg.</li>
+                        <li>Fotel dostępny jest w różnych tkaninach i wersjach kolorystycznych</li>
+                        <li>W wyniku zastosowania miękkich pianek, mogą wystąpić różnice kształtów i wymiarów pomiędzy zdjęciami z katalogu oraz strony www, a rzeczywistym produktem (maksymalne odchylenie: do ok. 5%).</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alvesta Pillow Armchair Black Metal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h3 class="gray-500">Dane techniczne</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-7">
+                            <div class="mx-20">
+                                <img src="images/data.png" height="600" width="600" class="img-fluid"/>
+                            </div>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td class="app-color-1">a</td>
+                                        <td>wysokość</td>
+                                        <td><strong>83</strong>cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="app-color-1">b</td>
+                                        <td>szerokość</td>
+                                        <td><strong>70</strong>cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="app-color-1">c</td>
+                                        <td>głębokość</td>
+                                        <td><strong>80</strong>cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="app-color-1">d</td>
+                                        <td>wysokość siedzenia</td>
+                                        <td><strong>46,5</strong>cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="app-color-1">e</td>
+                                        <td>wysokość podłokietnika</td>
+                                        <td><strong>63</strong>cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="app-color-1"></td>
+                                        <td><strong>objętość</strong></td>
+                                        <td><strong>0,47</strong>m<sup>3</sup></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="basket-aside">
         <div class="basket-aside-header">
             <span class="colse-btn" onclick="$('.basket-aside').removeClass('opened')"><i class="icon-close"></i></span>
@@ -403,8 +544,40 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" integrity="sha256-Em980gslxcwVVa9UiWSq9L272W/36P3mRisSety2RSA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
+
+
+    <script>
+
+        $(document).ready( function() {
+
+            $('#galleryModal').on('shown.bs.modal', function (e) {
+
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                    spaceBetween: 0,
+                    slidesPerView: 4,
+                    freeMode: true,
+                    watchSlidesVisibility: true,
+                    watchSlidesProgress: true,
+                });
+                var galleryTop = new Swiper('.gallery-top', {
+                    spaceBetween: 0,
+                    navigation: {
+                        nextEl: '.gallery-top .swiper-button-next',
+                        prevEl: '.gallery-top .swiper-button-prev',
+                    },
+                    thumbs: {
+                        swiper: galleryThumbs
+                    }
+                });
+
+            })
+
+        });
+
+
+    </script>
 
 
 </body>

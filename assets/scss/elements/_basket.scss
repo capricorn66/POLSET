@@ -9,7 +9,6 @@
     width: 400px;
     background: $white;
     z-index: 11;
-    box-shadow: 0 0 20px 0 rgba($black,.2);
     transition: transform ease-out .3s;
     transform: translateX(0);
     overflow-y: auto;
@@ -18,6 +17,7 @@
 
     &.opened {
         transform: translateX(-400px);
+        box-shadow: 0 0 20px 0 rgba($black,.2);
     }
 
     @media (max-width: 480px) {
@@ -89,8 +89,6 @@
             }
         }
     }
-
-
 }
 
 .basket-product-list {

@@ -103,8 +103,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.modal-body,
-main {
+.modal-body {
+
+    font-size: 18px;
 
     .lead {
         line-height: 1.5em;
@@ -127,6 +128,31 @@ main {
 
     strong {
         font-weight: 600;
+    }
+
+    ul:not([class]) {
+        list-style: none;
+        margin: 0 0 20px 20px;
+        @media (max-width: 575px) {
+            margin-left: 0;
+        }
+        > li {
+            position: relative;
+            margin-bottom: 18px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: 4px solid $app-color-1;
+                left: -30px;
+                top: 4px;
+            }
+            ul, ol {
+                margin: 15px 0 0;
+            }
+        }
     }
 
 }
