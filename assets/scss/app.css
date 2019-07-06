@@ -299,6 +299,9 @@
 .relative {
   position: relative !important; }
 
+.borderLess {
+  border: 0 !important; }
+
 .pointer {
   cursor: pointer;
   -webkit-transition: opacity 0.2s ease-out !important;
@@ -339,6 +342,9 @@
 
 .font20 {
   font-size: 20px; }
+
+.mw-auto {
+  min-width: auto !important; }
 
 @media (max-width: 991px) {
   .n3px {
@@ -3330,6 +3336,9 @@
   .px-lg-100 {
     padding-left: 100px !important;
     padding-right: 100px !important; } }
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #D20018; }
+
 /* breadcrumb
 *******************************************************************/
 .backward {
@@ -3395,10 +3404,11 @@
       color: #292929; }
 
 .breadcrumb {
-  padding: 0;
   background: none;
   font-weight: 300;
+  border-radius: 0;
   margin: 10px 0 40px !important;
+  padding: 0 0 16px;
   font-size: 28px;
   border-bottom: 1px solid #292929; }
   @media (max-width: 991px) {
@@ -3480,12 +3490,10 @@
   .btn-black i {
     color: #D20018; }
   .btn-black:focus, .btn-black:hover {
-    border: 1px solid #D20018;
-    background: #D20018;
-    color: white;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
     box-shadow: none; }
-    .btn-black:focus i, .btn-black:hover i {
-      color: white; }
 
 .btn-outline-black {
   background: transparent;
@@ -3508,6 +3516,22 @@
   font-weight: 500;
   transition: all linear .2s;
   box-shadow: 0 0.2em 10px -3px rgba(0, 0, 0, 0.4); }
+  .btn i {
+    font-size: 130%;
+    line-height: 0;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: -.05em; }
+    .btn i.icon-plus {
+      transform: rotate(0);
+      transition: transform linear .3s; }
+  .btn:hover i.icon-plus {
+    transform: rotate(90deg); }
+  .btn[data-toggle="collapse"][aria-expanded="true"] span:first-child {
+    display: none; }
+  .btn[data-toggle="collapse"][aria-expanded="false"] span:last-child {
+    display: none; }
 
 .btn-setView {
   padding: 0 5px;
@@ -3520,10 +3544,12 @@
   font-size: 1rem;
   min-width: 200px;
   letter-spacing: 1px; }
-  .btn-lg i {
+  .btn-lg i.icon-transfer-right {
     position: absolute;
     right: 34px;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    line-height: 1;
+    top: auto; }
 
 .btn-xl {
   padding: 10px 80px;
@@ -3970,6 +3996,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* forms
 *******************************************************************/
+.custom-select,
 .form-control {
   border-color: #414141; }
 
@@ -3997,6 +4024,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #000;
   border-color: #000;
   color: #FFF; }
+
+.form-control-icon {
+  position: relative;
+  display: block; }
+  .form-control-icon .form-control {
+    padding-right: 46px; }
+  .form-control-icon i {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    right: 14px;
+    color: #CCC;
+    font-size: 22px; }
 
 /* product
 *******************************************************************/
@@ -4177,12 +4217,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   background: #e2e2e2;
   padding: 30px 5% 15px;
-  position: sticky;
+  position: fixed;
+  z-index: 11;
   bottom: 0;
   font-size: 18px; }
+  .productCard-summary + footer {
+    margin-bottom: 146px; }
   @media (max-width: 991px) {
     .productCard-summary {
-      position: relative; } }
+      position: relative; }
+      .productCard-summary + footer {
+        margin-bottom: 0; } }
   @media (max-width: 767px) {
     .productCard-summary {
       padding: 20px 5% 5px;
@@ -4369,8 +4414,7 @@ h1, h2, h3, h4, h5, h6 {
 .basket-product-list .basket-product-list-summary {
   background: #e2e2e2;
   padding: 50px 5% 45px;
-  position: sticky;
-  bottom: 0;
+  position: static;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: end;
@@ -4504,6 +4548,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     font-size: 16px;
     border-bottom: 1px solid #000;
+    border-radius: 0;
     padding: 12px 0;
     cursor: pointer; }
     .basket-product-list .col-product-comments .col-product-comments-btn i {
@@ -4857,8 +4902,11 @@ h1, h2, h3, h4, h5, h6 {
 .table.table-orders thead {
   background: #000;
   color: #FFF; }
-  .table.table-orders thead th {
-    font-weight: 400; }
+  .table.table-orders thead tr {
+    box-shadow: 0 0 0 3px #FFF inset; }
+    .table.table-orders thead tr th {
+      font-weight: 400;
+      border: 0; }
 .table.table-orders tbody tr {
   box-shadow: 0 0 0 2px #FFF inset, 0 0 0 3px #e2e2e2 inset; }
   .table.table-orders tbody tr[data-href] {
@@ -4938,5 +4986,18 @@ h1, h2, h3, h4, h5, h6 {
       border-color: #000; }
     .pagination .page-item .page-link {
       color: #000; }
+    .pagination .page-item .page-dotted {
+      padding: 8px 10px;
+      display: block; }
+    .pagination .page-item .page-prev,
+    .pagination .page-item .page-next {
+      padding: 8px 10px;
+      display: block;
+      color: #D20018; }
+      .pagination .page-item .page-prev:focus, .pagination .page-item .page-prev:hover,
+      .pagination .page-item .page-next:focus,
+      .pagination .page-item .page-next:hover {
+        text-decoration: none;
+        color: #000; }
 
 /*# sourceMappingURL=app.css.map */

@@ -5,8 +5,12 @@
         thead {
             background: $black;
             color: $white;
-            th {
-                font-weight: 400;
+            tr {
+                box-shadow: 0 0 0 3px $white inset;
+                th {
+                    font-weight: 400;
+                    border: 0;
+                }
             }
         }
         tbody {

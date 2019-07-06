@@ -1,6 +1,7 @@
 /* forms
 *******************************************************************/
 
+.custom-select,
 .form-control {
     border-color: $gray-800;
 }
@@ -37,3 +38,20 @@
     border-color: $black;
     color: $white;
 }
+
+.form-control-icon {
+    position: relative;
+    display: block;
+    .form-control {
+        padding-right: 46px;
+    }
+    i {
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        right: 14px;
+        color: $gray-300;
+        font-size: 22px;
+    }
+}
+

@@ -229,9 +229,16 @@
     width: 100vw;
     background: $gray-200;
     padding: 30px 5% 15px;
-    position: sticky;
+    position: fixed;
+    z-index: 11;
+    + footer {
+        margin-bottom: 146px;
+    }
     @media (max-width: 991px) {
         position: relative;
+        + footer {
+            margin-bottom: 0;
+        }
     }
     bottom: 0;
     font-size: 18px;

@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.css" integrity="sha256-VVbO1uqtov1mU6f9qu/q+MfDmrqTfoba0rAE07szS20=" crossorigin="anonymous">    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -70,14 +69,13 @@
 
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Moje zamówienia</li>
                 </ol>
             </nav>
 
             <div class="d-flex flex-column flex-md-row justify-content-between flex-wrap mb-20">
                 <div class="mb-20">
-                    <a href="" class="btn btn-outline-black"><i class="icon-printer mr-5"></i> Drukuj</a>
+                    <a href="" class="btn btn-outline-black"><i class="icon-printer mr-10"></i> Drukuj</a>
                 </div>
                 <div class="mb-20">
                     <span class="mr-10">Pobierz</span>
@@ -86,6 +84,108 @@
                     <a href="" class="btn btn-outline-black">Excel</a>
                 </div>
             </div>
+
+
+            <button class="btn btn-outline-black mb-10" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <span>POKAŻ FILTRY <i class="ml-10 icon-plus"></i></span>
+                <span>UKRYJ FILTRY <i class="ml-10 icon-plus"></i></span>
+            </button>
+
+            <div class="collapse bg-gray-100" id="collapseExample">
+                <div class="row align-items-end py-30 px-15">
+
+                    <div class="col-lg-6 col-xxl-4 offset-xxl-1 mb-30">
+                        <span class="gray-500">Zakres dat</span>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="dataFrom">Data od</label>
+                                    <span class="form-control-icon">
+                                        <input type="text" class="form-control form-control-lg" id="dataFrom" placeholder="wybierz">
+                                        <i class="icon-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="dataTo">Data do</label>
+                                    <span class="form-control-icon">
+                                        <input type="text" class="form-control form-control-lg" id="dataTo" placeholder="wybierz">
+                                        <i class="icon-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xxl-5 offset-xxl-1 mb-30">
+                        <div class="row ">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="period">Okres</label>
+                                    <select class="custom-select custom-select-lg" id="period">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="order-code">Kod zamówienia</label>
+                                    <input type="text" class="form-control form-control-lg" id="order-code" placeholder="wybierz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xxl-4 offset-xxl-1 mb-30">
+                        <span class="gray-500">Wartość zamówienia</span>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="priceFrom">Cena od</label>
+                                    <input type="text" class="form-control form-control-lg" id="priceFrom" placeholder="wybierz">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="priceTo">Cena do</label>
+                                    <input type="text" class="form-control form-control-lg" id="priceTo" placeholder="wybierz">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xxl-5 offset-xxl-1 mb-30">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="order-status">Status zamówienia</label>
+                                    <select class="custom-select custom-select-lg" id="order-status">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 d-flex justify-content-between align-items-end mb-15">
+                                <div class="d-flex justify-content-between align-items-center flex-grow-1">
+                                    <button type="submit" class="btn btn-lg btn-black px-20 mw-auto">Wyszukaj</button>
+                                    <a href="" class="black">Wyczyść filtry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clearfix mb-40"></div>
+
 
             <div class="d-flex flex-column flex-md-row mb-30 justify-content-between align-items-md-center">
 
@@ -106,7 +206,9 @@
                     <ul class="pagination">
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><span class="page-dotted">...</span></li>
+                        <li class="page-item"><a class="page-link" href="#">11</a></li>
+                        <li class="page-item"><a class="page-next" href="#"><i class="icon-arrow-right"></i></a></li>
                     </ul>
                 </nav>
 
@@ -243,7 +345,9 @@
                     <ul class="pagination">
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><span class="page-dotted">...</span></li>
+                        <li class="page-item"><a class="page-link" href="#">11</a></li>
+                        <li class="page-item"><a class="page-next" href="#"><i class="icon-arrow-right"></i></a></li>
                     </ul>
                 </nav>
 
@@ -389,6 +493,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/pl.js" integrity="sha256-prSi7A1V9ZxDIIGoYopovpFgGHQodz6JVZu5Aad7o8s=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js" integrity="sha256-zI6VVO07NPmVW11q3RQE42YbRmJIkkunrcQ9LEYxJsQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
 
 
@@ -398,9 +506,19 @@
 
             $('.table-orders tbody tr[data-href]').each( function() {
                 rowClick(this);
-            })
+            });
 
+
+            $('#dataFrom').daterangepicker({
+                autoUpdateInput: false,
+                singleDatePicker: true,
+            });
+            $('#dataTo').daterangepicker({
+                autoUpdateInput: false,
+                singleDatePicker: true,
+            });
         });
+
 
         function rowClick(elem, href) {
 

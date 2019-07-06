@@ -78,10 +78,11 @@
 }
 
 .breadcrumb {
-    padding: 0;
     background: none;
     font-weight: 300;
+    border-radius: 0;
     margin: 10px 0 40px !important;
+    padding: 0 0 16px;
     font-size: 28px;
     @media (max-width: 991px) {
         font-size: 24px;

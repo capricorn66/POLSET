@@ -63,13 +63,10 @@
     }
     &:focus,
     &:hover {
-        border: 1px solid $app-color-1;
-        background: $app-color-1;
-        color: white;
+        background: transparent;
+        border: 1px solid black;
+        color: black;
         box-shadow: none;
-        i {
-            color: white;
-        }
     }
 }
 
@@ -92,6 +89,7 @@
     }
 }
 
+
 .btn {
     padding-left: 15px;
     padding-right: 15px;
@@ -99,6 +97,35 @@
     font-weight: 500;
     transition: all linear .2s;
     box-shadow: 0 .2em 10px -3px rgba($black,.4);
+    i {
+        font-size: 130%;
+        line-height: 0;
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        top: -.05em;
+        &.icon-plus {
+            transform: rotate(0);
+            transition: transform linear .3s;
+        }
+    }
+    &:hover {
+        i.icon-plus {
+            transform: rotate(90deg);
+        }
+    }
+    &[data-toggle="collapse"] {
+        &[aria-expanded="true"] {
+            span:first-child {
+                display: none;
+            }
+        }
+        &[aria-expanded="false"] {
+            span:last-child {
+                display: none;
+            }
+        }
+    }
 }
 
 .btn-setView {
@@ -117,10 +144,12 @@
     font-size: 1rem;
     min-width: 200px;
     letter-spacing: 1px;
-    i {
+    i.icon-transfer-right {
         position: absolute;
         right: 34px;
         font-size: 1.4rem;
+        line-height: 1;
+        top: auto;
     }
 }
 

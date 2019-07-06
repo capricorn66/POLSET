@@ -139,8 +139,7 @@
         .basket-product-list-summary {
             background: $gray-200;
             padding: 50px 5% 45px;
-            position: sticky;
-            bottom: 0;
+            position: static;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-align: end;
@@ -293,6 +292,7 @@
                 display: flex;
                 font-size: 16px;
                 border-bottom: 1px solid #000;
+                border-radius: 0;
                 padding: 12px 0;
                 cursor: pointer;
                 i {

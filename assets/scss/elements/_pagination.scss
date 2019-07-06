@@ -15,6 +15,22 @@
         .page-link {
             color: $black;
         }
+        .page-dotted {
+            padding: 8px 10px;
+            display: block;
+        }
+        .page-prev,
+        .page-next {
+            padding: 8px 10px;
+            display: block;
+            color: $app-color-1;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
     }
 }
 

@@ -93,6 +93,10 @@
     position: relative !important;
 }
 
+.borderLess {
+    border: 0 !important;
+}
+
 .pointer {
     cursor: pointer;
     @include transition(opacity 0.2s ease-out);
@@ -143,7 +147,9 @@
 .font20 {
     font-size: 20px;
 }
-
+.mw-auto {
+    min-width: auto !important;
+}
 .n3px {
 
     @media (max-width: 991px) {
@@ -363,4 +369,9 @@
             padding-right: #{$j}px !important;
         }
     }
+}
+
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: $app-color-1;
 }
