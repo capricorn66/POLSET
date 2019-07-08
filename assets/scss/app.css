@@ -4553,7 +4553,9 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer; }
     .basket-product-list .col-product-comments .col-product-comments-btn i {
       font-size: 18px;
+      margin-left: auto;
       display: block;
+      line-height: normal;
       width: 18px;
       height: 18px;
       position: relative;
