@@ -1,6 +1,23 @@
 /* forms
 *******************************************************************/
 
+
+.dataTables_filter input {
+    border: 1px solid $gray-800;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    height: calc(1.5em + .75rem + 2px);
+    background: white;
+    background-clip: padding-box;
+    &:focus {
+        border-color: $app-color-1;
+        box-shadow: none;
+    }
+}
+
+
 .custom-select,
 .form-control {
     border-color: $gray-800;

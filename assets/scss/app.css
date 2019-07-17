@@ -3996,6 +3996,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* forms
 *******************************************************************/
+.dataTables_filter input {
+  border: 1px solid #414141;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  height: calc(1.5em + .75rem + 2px);
+  background: white;
+  background-clip: padding-box; }
+  .dataTables_filter input:focus {
+    border-color: #D20018;
+    box-shadow: none; }
+
 .custom-select,
 .form-control {
   border-color: #414141; }
@@ -4957,6 +4970,19 @@ h1, h2, h3, h4, h5, h6 {
     border-right: 1px solid #e2e2e2;
     text-align: left;
     font-weight: 600; }
+
+table.dataTable thead .sorting_asc {
+  background-image: url("../images/sort_asc.png") !important; }
+
+table.dataTable thead .sorting_desc {
+  background-image: url("../images/sort_desc.png") !important; }
+
+table.dataTable thead th,
+table.dataTable thead td {
+  border-bottom: 2px solid #dee2e6; }
+
+table.dataTable.no-footer {
+  border-bottom: 1px solid #e2e2e2; }
 
 /* status
 *******************************************************************/
