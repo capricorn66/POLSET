@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POLSET</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/polset-logo-white.svg" alt="sklep polset">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <button class="basket" onclick="$('.basket-aside').addClass('opened')"><i class="icon-basket"></i><sub class="badge">2</sub></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUKTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CENNIK</a>
+                        </li>
+                    </ul>
+                    <ul class="userbar-nav">
+                        <li class="nav-item">
+                            <i class="icon-user"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Moje Zamówienia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Moje Dane</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-white" href="#">WYLOGUJ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="mainContent">
+
+        <div class="container">
+
+            <div class="backward">
+                <a href=""><i class="icon-transfer-left"></i> wróć do listy produktów</a>
+            </div>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Moje dane</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-6 d-flex">
+                    <div class="box-block d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    Klient:
+                                </div>
+                                <div class="col-10 col-md-7">
+                                    <span>Nolte-Möbel GmbH & Co.</span>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                    <a href="" data-toggle="modal" data-target="#editModal">
+                                        <i class="icon-edit font-24 ml-8 gray-500"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <div class="box-block d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    Login (adres e-mail):
+                                </div>
+                                <div class="col-10 col-md-7">
+                                    <span>info@nolte-moebel.de</span>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                    <a href="" data-toggle="modal" data-target="#editModal">
+                                        <i class="icon-edit font-24 ml-8 gray-500"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 d-flex">
+                    <div class="box-block d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    Imię i nazwisko:
+                                </div>
+                                <div class="col-10 col-md-7">
+                                    <span>Helmut Muller</span>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                    <a href="" data-toggle="modal" data-target="#editModal">
+                                        <i class="icon-edit font-24 ml-8 gray-500"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <div class="box-block d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    Numer telefonu:
+                                </div>
+                                <div class="col-10 col-md-7">
+                                    <span>info@nolte-moebel.de</span>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                    <a href="" data-toggle="modal" data-target="#editModal">
+                                        <i class="icon-edit font-24 ml-8 gray-500"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 d-flex">
+                    <div class="box-block d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    Adres:
+                                </div>
+                                <div class="col-10 col-md-7">
+                                    <span>Konrad-Nolte-Straße 20<br> 76726 Germersheim<br> Deutschland</span>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                    <a href="" data-toggle="modal" data-target="#editModal">
+                                        <i class="icon-edit font-24 ml-8 gray-500"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <div class="box-block d-flex align-items-center">
+                        <div class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    VAT UE:
+                                </div>
+                                <div class="col-10 col-md-7">
+                                    <span>DE125896523</span>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                    <a href="" data-toggle="modal" data-target="#editModal">
+                                        <i class="icon-edit font-24 ml-8 gray-500"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <a class="brand" href="#">
+                        <img src="images/polset-logo-white.svg" alt="sklep polset">
+                    </a>
+                    <p>
+                        ul. Bohaterów Westerplatte 4/5<br>
+                        65-034 Zielona Góra<br>
+                        Polska
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h6>KONTAKT</h6>
+                    <p>
+                        <a href="">info@polset.pl</a><br>
+                        tel. <strong>+48 68 383 64 61</strong><br>
+                        fax <strong>+48 68 383 07 54</strong>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h6>MENU</h6>
+                    <ul>
+                        <li>
+                            <a href="">Pomoc</a>
+                        </li>
+                        <li>
+                            <a href="">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="">Polityka prywatności</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-right d-none d-lg-block">
+                    <div class="img-light">
+                        <img src="images/armchair-polset.png" height="380" width="367"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="basket-aside">
+        <div class="basket-aside-header">
+            <span class="colse-btn" onclick="$('.basket-aside').removeClass('opened')"><i class="icon-close"></i></span>
+            Koszyk
+        </div>
+        <div class="basket-aside-body">
+            <div class="basket-product-list">
+
+                <div class="basket-product-list-row">
+                    <div class="col-product">
+                        <div class="col-product-img" data-new="NOWOŚĆ">
+                            <img src="images/armchairs/armchair-1.png" height="296" width="296"/>
+                        </div>
+                        <div class="col-product-desc">
+                            <h2>Alvesta Pillow Armchair Black Metal</h2>
+                            <div class="col-unit-price">
+                                <strong>250,00</strong> EUR
+                            </div>
+                            <div class="col-amount">
+                                20 szt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-product-list-row">
+                    <div class="col-product">
+                        <div class="col-product-img" data-new="NOWOŚĆ">
+                            <img src="images/chairs/chair-1.png" height="296" width="296"/>
+                        </div>
+                        <div class="col-product-desc">
+                            <h2>Jessica Chair</h2>
+                            <div class="col-unit-price">
+                                <strong>250,00</strong> EUR
+                            </div>
+                            <div class="col-amount">
+                                20 szt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-product-list-row">
+                    <div class="col-product">
+                        <div class="col-product-img">
+                            <img src="images/chairs/chair-2.png" height="296" width="296"/>
+                        </div>
+                        <div class="col-product-desc">
+                            <h2>Jessica Chair</h2>
+                            <div class="col-unit-price">
+                                <strong>250,00</strong> EUR
+                            </div>
+                            <div class="col-amount">
+                                20 szt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-product-list-summary">
+
+                    Wartość zamówienia
+
+                    <div class="basket-price">
+                        9 610,00 <small>EUR</small>
+                    </div>
+
+                </div>
+                <div class="text-right mb-80">
+
+                    <small>*Cena nie zawiera kosztów dostawy (<strong>EXW Krosno Odrzańskie</strong>)</small>
+
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg px-60">ZAMAWIAM</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+    <div class="bs4-xxl d-none d-xxl-block"></div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addModalLabel">Zmień nazwę</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><span class="icon-close"></span></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-32">
+                        <label for="name18">Nazwa</label>
+                        <input type="text" id="name18" class="form-control" value="Nazwa">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+                    <button type="button" class="btn btn-primary">ZAPISZ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
+
+
+
+    <script>
+
+        $(function() {
+
+            $('#price-table-1, #price-table-2, #price-table-3').DataTable({
+                "lengthChange": false,
+                "ordering": true,
+                "info": false,
+                "paging": false,
+                "searching": true,
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>

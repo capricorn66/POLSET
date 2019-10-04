@@ -343,6 +343,9 @@
 .font20 {
   font-size: 20px; }
 
+.font-24 {
+  font-size: 24px; }
+
 .mw-auto {
   min-width: auto !important; }
 
@@ -5063,5 +5066,26 @@ table.dataTable.no-footer {
       .pagination .page-item .page-next:hover {
         text-decoration: none;
         color: #000; }
+
+/* box
+*******************************************************************/
+.box-block {
+  padding: 20px;
+  border: 1px solid #CCC;
+  margin: 0 0 10px;
+  width: 100%; }
+  .box-block.box-block-white {
+    background: #FFF; }
+  .box-block.box-block-gray {
+    background: #e2e2e2;
+    border: 1px solid #e2e2e2; }
+  @media (max-width: 991px) {
+    .box-block {
+      padding: 40px 32px; } }
+  @media (max-width: 575px) {
+    .box-block {
+      padding: 30px 15px;
+      margin-left: -15px;
+      margin-right: -15px; } }
 
 /*# sourceMappingURL=app.css.map */
